@@ -18,7 +18,7 @@ async def serve_vedio_html(type: str, id: str):
     """
     Serve the vedio.html file, preserving query parameter ?id,type.
     """
-    return FileResponse("D:/360vidpic/video.html")
+    return FileResponse(f"{os.getcwd()}/video.html")
 
 
 # Route to serve vision360.html
