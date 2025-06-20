@@ -1806,7 +1806,7 @@ function getAll(context, tag) {
             const urlParams = new URLSearchParams(window.location.search);
             const moviename = urlParams.get("moviename");
 
-            fetch('http://192.168.29.71:2500/upload-base64', {
+            fetch('http://127.0.0.1:2500/upload-base64', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

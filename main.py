@@ -31,4 +31,4 @@ app = create_app()
 
 if __name__ == "__main__":
     # Run the application with specified host and port
-    uvicorn.run("main:app", host="192.168.29.71", port=2500, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=2500, reload=True)

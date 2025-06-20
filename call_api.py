@@ -71,7 +71,7 @@ def down_apis():
                 }) if request.url.endswith("/upload-base64") and request.method == "POST" else None)
 
                 # Navigate to the page
-                page_url = f"http://192.168.29.71:2500/vision360.html?moviename={video_link}"
+                page_url = f"http://127.0.0.1:2500/vision360.html?moviename={video_link}"
                 print(f"Loading page: {page_url}")
                 response = page.goto(page_url)
 
