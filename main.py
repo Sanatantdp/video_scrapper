@@ -2,13 +2,14 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 from fastapi import FastAPI
 from router import app_router
+import os
 
 
 def create_app() -> FastAPI:
     """
     Creates and configures the FastAPI application.
     """
-    STATIC_ROOT = "D:/360vidpic"
+    STATIC_ROOT = os.getcwd()
 
     app = FastAPI(title="360 Diamond", version="1.0.0")
     app.include_router(app_router)
