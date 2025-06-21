@@ -1806,7 +1806,7 @@ function getAll(context, tag) {
             const urlParams = new URLSearchParams(window.location.search);
             const moviename = urlParams.get("moviename");
 
-            fetch('http://127.0.0.1:2500/upload-base64', {
+            fetch('https://video-scrapper.onrender.com/upload-base64', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
