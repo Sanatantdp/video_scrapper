@@ -1,15 +1,15 @@
 const canvas = document.querySelector("#canvas");
 const loader = document.querySelector("#loader");
 const context = canvas.getContext("2d");
-let baseURL = "https://video-scrapper.onrender.com/opt/render/project/src/imagedata/";
+let baseURL = "https://video-scrapper.onrender.com/opt/render/project/src/imagedata";
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const type = urlParams.get("type");
 // console.log(type);
 if(type == "W") {
-baseURL = "https://video-scrapper.onrender.com/opt/render/project/src/imagedata/";
+baseURL = "https://video-scrapper.onrender.com/opt/render/project/src/imagedata";
 }else if(type == "L") {
-baseURL = "https://video-scrapper.onrender.com/opt/render/project/src/imagedata/";
+baseURL = "https://video-scrapper.onrender.com/opt/render/project/src/imagedata";
 }
 let totalImages = 256;
 let currentImageIndex = 0;  // Start from the first image (index 0)
