@@ -1,13 +1,13 @@
 const canvas = document.querySelector("#canvas");
 const loader = document.querySelector("#loader");
 const context = canvas.getContext("2d");
-let baseURL = "http://192.168.29.71:2500/imagedata";
+let baseURL = "http://127.0.0.1:2500/imagedata";
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const type = urlParams.get("type");
 // console.log(type);
 if(type == "W") {
-baseURL = "http://192.168.29.71:2500/imagedata";
+baseURL = "http://127.0.0.1:2500/imagedata";
 }else if(type == "L") {
 baseURL = "https://diabrilliance.com/imagedata/labgrown";
 }
