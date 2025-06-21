@@ -87,7 +87,7 @@ async def upload_base64(request: Request):
             next_index = 1
         print('next_index', next_index)
         filename = os.path.join(imagedata_diamond_dir, f"{next_index}.jpg")
-
+        print(filename)
         with open(filename, "wb") as f:
             f.write(image_data)
         end_time = time.time()
